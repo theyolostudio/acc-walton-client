@@ -49,6 +49,59 @@ const PRODUCTS = {
         "Capacity : 591 Liters",
       ],
     },
+    {
+      id: 2,
+      model: "ARNR656FSGDW",
+      image: "/product/REF/Website Images-15.jpg",
+      title: "Loading Quantity: 40HQ: 36",
+      feature: [
+        "Metal & Duo Cooling +",
+        "Water Dispenser",
+        "IGT & Activated Carbon Odor Filter",
+        "Convertible Mode (8 in 1)",
+        "Capacity: 656 Liters",
+      ],
+    },
+    {
+      id: 3,
+      model: "ARNR660EFSBD",
+      image: "/product/REF/Website Images-18.jpg",
+      title: "Loading Quantity: 40HQ: 36",
+      feature: [
+        "Trio Cooling +",
+        "IGT & Activated Carbon Odor Filter",
+        "IInternal Water Dispenser & Automatic Ice Maker",
+        "Capacity: 660 Liters",
+      ],
+    },
+    {
+      id: 4,
+      model: "ARNT350ELSMD",
+      image: "/product/REF/Website Images-17.jpg",
+      title: "Loading Quantity: 20FT/40FT/40HQ: 27/54/72",
+      feature: [
+        "Monochrome Matrix LED",
+        "Ultra Low Noise",
+        "Photosynthetic Freshness",
+        "Reversible Door",
+        "Capacity: 350 Liters"
+      ],
+    },
+    {
+      id: 5,
+      model: "ARUE325ELGDDD",
+      image: "/product/REF/Website Images-16.jpg",
+      title: "Loading Quantity: 20FT/40FT/40HQ: 27/57/76",
+      feature: [
+        "Fresh Plus Sliding Drawer",
+        "Fire Retardant Wire",
+        "Toughened Door Glass",
+        "Glass Rack and Flip Cover",
+        "Electronic Control with Display",
+        "Food Organizing System",
+        "Capacity: 325 Liters"
+      ],
+    },
   ],
   wm: [
     {

@@ -8,7 +8,7 @@ const About = () => {
             <Head>
                 <title>About Acc</title>
             </Head>
-            <div className="bg-[#000B35] text-white text-justify  min-h-[57.49vh]">
+            <div className="bg-[#000B35] text-white text-justify  min-h-[60vh]">
                 <div className="py-10 mx-10  lg:w-4/5 lg:mx-auto">
                     <h1 className="text-5xl font-semibold text-center">About Acc</h1>
                     <br />

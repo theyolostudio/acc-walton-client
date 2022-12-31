@@ -10,7 +10,7 @@ const NavBar = () => {
             <div className="bg-[#000B35] text-white w-full hidden md:block">
                 <div className="px-3  lg:w-3/4 mx-auto md:flex justify-between">
                     <div>
-                        <Link href="/about">Acout Acc</Link>
+                        <Link href="/about">About ACC</Link>
                     </div>
                     <div>
                         <ul className="grid gap-4 grid-flow-col auto-cols-max">

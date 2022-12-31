@@ -8,9 +8,9 @@ const ContuctUs = () => {
             <Head>
                 <title>Contact Us</title>
             </Head>
-            <div className="bg-[#000B35] text-white text-center min-h-[57.49vh]">
-                <div className="py-10">
-                    <h1 className="text-5xl font-semibold">Contact Us</h1>
+            <div className="bg-[#000B35] text-white min-h-[60vh]">
+                <div className="py-10 mx-5 md:w-4/5 md:mx-auto overflow-auto">
+                    <h1 className="text-5xl font-semibold text-center">Contact Us</h1>
                     <br />
                     <p>Texas, USA</p>
 

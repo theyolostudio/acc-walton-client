@@ -1,4 +1,6 @@
 import Head from "next/head";
+import BestFeatureProducts from "../components/home/BestFeatureProducts";
+import FeatureRef from "../components/home/FeatureRef";
 import FeatureWashingMachines from "../components/home/FeatureWashingMachines";
 import ProductSection from "../components/home/ProductSection";
 import Slider from "../components/home/Slider";
@@ -16,6 +18,8 @@ export default function Home() {
           <div className="w-5/6 mx-auto">
             <ProductSection />
             <FeatureWashingMachines />
+            <BestFeatureProducts />
+            <FeatureRef />
           </div>
         </div>
       </main>

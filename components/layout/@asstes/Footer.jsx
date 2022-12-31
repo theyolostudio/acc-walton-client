@@ -13,9 +13,9 @@ const Footer = () => {
 
                     <ul className="text-white">
                         <li>
-                            <a href="#" className="hover:underline">
+                            <Link href="/contact-us" className="hover:underline">
                                 Contact us
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="#" className="hover:underline">

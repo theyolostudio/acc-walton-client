@@ -5,13 +5,13 @@ import Link from "next/link"
 const ProductCard = ({ image, model, url }) => {
     return (
         <Link href={url}>
-            <div className="w-72 h-80 m-5">
+            <div className="h-80 py-5 mx-4">
                 <div className="relative w-full h-full border border-gray-400" >
                     <Image
                         alt="Image Alt"
                         src={image}
                         layout="fill"
-                        objectFit="cover"
+                        objectFit="contain"
                         priority
                     />
                 </div>

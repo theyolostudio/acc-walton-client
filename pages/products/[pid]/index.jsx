@@ -15,7 +15,7 @@ const Products = () => {
       <Head>
         <title>{pid && pid.toUpperCase()}</title>
       </Head>
-      <div className="w-4/5 mx-auto p-5">
+      <div className="md:w-4/5 md:mx-auto my-6">
         {pid === 'television' && <AllProducts prod='television' />}
         {pid === 'ac' && <AllProducts prod='ac' />}
         {pid === 'refrigerator' && <AllProducts prod='refrigerator' />}

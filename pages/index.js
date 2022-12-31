@@ -13,7 +13,10 @@ export default function Home() {
         <title>Acc Walton</title>
       </Head>
       <main>
-        <Slider />
+        <div className="bg-[#000B35]">
+          <Slider />
+        </div>
+
         <div className="bg-[#000B35]">
           <div className="w-5/6 mx-auto">
             <ProductSection />

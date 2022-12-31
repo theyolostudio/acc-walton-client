@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Footer = () => {
     return (
-        <footer className="bg-[#00061F] sm:p-6">
+        <footer className="bg-[#00061F] py-8">
             <div className="w-4/5 mx-auto">
                 <div className="flex justify-between">
                     <div>
@@ -45,20 +45,25 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <Link href="/">
-                        <div className="w-32 h-16">
-                            <div className="relative w-full h-full" >
-                                <Image
-                                    alt="Image Alt"
-                                    src="/ACC_Logo.png"
-                                    layout="fill"
-                                    objectFit="cover"
-                                    priority
-                                />
+                    <div>
+                        <Link href="/">
+                            <div className="w-32 h-16">
+                                <div className="relative w-full h-full" >
+                                    <Image
+                                        alt="Image Alt"
+                                        src="/ACC_Logo.png"
+                                        layout="fill"
+                                        objectFit="cover"
+                                        priority
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        
-                    </Link>
+
+                        </Link>
+                        <img src="/playstore.png" alt="playstore image"
+                            className="h-11 w-auto" />
+                    </div>
+
                 </div>
                 <hr className="my-6 border-white-200 sm:mx-auto  lg:my-8" />
 

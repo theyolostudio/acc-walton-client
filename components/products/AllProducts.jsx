@@ -8,7 +8,12 @@ const AllProducts = ({ prod }) => {
 
   return (
     <>
-      <h1 className="text-center text-5xl font-extrabold capitalize">{prod}</h1>
+      <h1 className="text-center text-5xl font-extrabold capitalize">
+        {prod === 'television' && 'Television'}
+        {prod === 'ac' && 'Air Condition'}
+        {prod === 'refrigerator' && 'Refrigerator'}
+        {prod === 'wm' && 'Washing Machine'}
+      </h1>
       <div className="flex flex-wrap">
         {
           PRODUCTS[prod].map(i => <ProductCard key={i.id} image={i.image} model={i.model} url={`/products/${prod}/${i.id}`} />)

@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <>
             <div className="bg-[#000B35] text-white w-full hidden md:block">
-                <div className="px-3  lg:w-3/4 mx-auto md:flex justify-between">
+                <div className="px-3 text-sm  lg:w-3/4 mx-auto md:flex justify-between">
                     <div>
                         <Link href="/about">About ACC</Link>
                     </div>
@@ -85,7 +85,7 @@ const NavBar = () => {
                             id="mega-menu"
                             className={`${!open && 'hidden'} justify-between items-center w-full text-sm md:flex md:w-auto md:order-1`}
                         >
-                            <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+                            <ul className="md:text-lg flex  flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
                                 {/* <li>
                                     <button
                                         id="mega-menu-dropdown-button"
@@ -157,7 +157,7 @@ const NavBar = () => {
                                         href="#"
                                         className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
                                     >
-                                        Best sellers
+                                        Best seller
                                     </a>
                                 </li>
                                 <li>
@@ -165,7 +165,6 @@ const NavBar = () => {
                                         href="https://drive.google.com/file/d/19ga2sYEcRweCngV31Z1HSeb_N_5qnx0e/view?usp=share_link"
                                         className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
                                         target={'_blank'}
-
                                     >
                                         Download
                                     </a>

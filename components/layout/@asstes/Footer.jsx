@@ -5,8 +5,8 @@ import Link from "next/link"
 const Footer = () => {
     return (
         <footer className="bg-[#00061F] py-8">
-            <div className="w-4/5 mx-auto">
-                <div className="flex items-stretch flex-col md:justify-between md:flex-row">
+            <div className="w-5/6 mx-auto">
+                <div className="flex items-stretch flex-col  md:justify-between md:flex-row">
                     <div>
                         <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                             CONTACT AND SUPPORT

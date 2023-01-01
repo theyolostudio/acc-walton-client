@@ -5,7 +5,7 @@ const FeatureRef = () => {
     return (
         <div className="py-16">
             <section className="py-10 md:py-14 lg:py-14">
-                <div className="w-full max-w-screen-xl px-4 mx-auto">
+                <div className="w-full mx-auto">
                     <section
                         className="flex items-center md:flex-row-reverse md:space-x-10 md:space-x-reverse flex-col-reverse space-y-reverse space-y-10 md:space-y-0">
                         <article className="w-full md:w-5/6 flex-1 text-white">

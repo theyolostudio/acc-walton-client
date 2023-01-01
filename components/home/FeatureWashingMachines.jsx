@@ -4,7 +4,7 @@ const FeatureWashingMachines = () => {
     return (
 
         <section className="py-10 md:py-14 lg:py-14">
-            <div className="w-full max-w-screen-xl px-4 mx-auto">
+            <div className="w-full mx-auto">
                 <section className="flex items-center md:space-x-10 flex-col space-y-10 md:space-y-0 md:flex-row">
                     <article className="w-full md:w-5/6 flex-1 text-white">
                         <h3 className="text-4xl font-bold mb-5">Front Load Washing Machines</h3>

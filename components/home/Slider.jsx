@@ -82,7 +82,7 @@ export default Slider
 const SliderContent = ({ id, heading, image, text, title }) => {
     return (
         <>
-            <div className="w-full">
+            <div className="w-full lg:relative">
                 <div className="">
                     {
                         id != 2 && <div className="bg-secondary-400">
@@ -110,10 +110,11 @@ const SliderContent = ({ id, heading, image, text, title }) => {
 
 
 
-                <div className="text-white p-5 lg:-mt-[17rem]">
+                <div className="text-gray-50  p-5 text-stroke-10 lg:absolute lg:bottom-10">
+                    
                     <h2 className="text-lg font-semibold">{title}</h2>
                     <h1 className="text-xl font-extrabold lg:text-4xl">{heading}</h1>
-                    <p className="my-2 text-sm lg:w-1/2 lg:text-lg">{text}</p>
+                    <p className="my-2 text-sm lg:w-2/6 lg:text-lg">{text}</p>
                     <Link href={"/about"}>
                         <button
                             type="button"

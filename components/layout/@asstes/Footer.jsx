@@ -47,7 +47,7 @@ const Footer = () => {
                     </div>
                     <div className="self-center my-4 md:my-0">
                         <Link href="/">
-                            <div className="w-32 h-16">
+                            {/* <div className="w-32 h-16">
                                 <div className="relative w-full h-full" >
                                     <Image
                                         alt="Image Alt"
@@ -57,7 +57,8 @@ const Footer = () => {
                                         priority
                                     />
                                 </div>
-                            </div>
+                            </div> */}
+                            <img src="ACC_Logo.png" class="w-36 mb-5" />
 
                         </Link>
 

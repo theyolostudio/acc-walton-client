@@ -11,7 +11,7 @@ const ProductSection = () => {
         {
             id: 2,
             image: "ac.jpg",
-            text: "air condition",
+            text: "air conditioner",
             item: "ac",
         },
         {

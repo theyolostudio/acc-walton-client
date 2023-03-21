@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "key": "Technical Specification",
+    "value": "ASI18BHB1-TRDD"
+  },
+  {
+    "id": 2,
+    "key": "Function",
+    "value": "Cooling"
+  },
+  {
+    "id": 3,
+    "key": "BTU/hr",
+    "value": "18000"
+  },
+  {
+    "id": 4,
+    "key": "Cooling Capacity (W)",
+    "value": "5275"
+  },
+
+  {
+    "id": 5,
+    "key": "Rated Input Power (W) ",
+    "value": "1240"
+  },
+  {
+    "id": 6,
+    "key": "COP or EER (W/W)",
+    "value": "4.25"
+  },
+  {
+    "id": 7,
+    "key": "Power Supply (phase/voltage (V)/frequency (Hz)/current (A))",
+    "value": "Single/230/50/5.45"
+  },
+  {
+    "id": 8,
+    "key": "Air Circulation (m3/h)",
+    "value": "900"
+  },
+  {
+    "id": 9,
+    "key": "Compressor Type ",
+    "value": "Rotary (Inverter)"
+  }
+]

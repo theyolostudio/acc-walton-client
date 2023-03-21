@@ -4,53 +4,88 @@ import { useRouter } from "next/router";
 import LandingLayout from "../../../components/layout/LandingLayout";
 import PRODUCTS from "../../../products";
 
+import data from "./data.json";
 
 const ProductDetails = () => {
-    const router = useRouter()
-    const { pid, info } = router.query
-
-    return (
-        <>
-            <Head>
-                <title>{pid && PRODUCTS[pid].filter(i => i.id === info * 1).shift().model}</title>
-            </Head>
-            <div className="w-4/5 mx-auto py-6">
-                {
-                    pid && <div className="lg:flex lg:justify-center">
-                        <div className="h-96 lg:w-[35rem] lg:h-[40rem]">
-                            <div className="relative w-full h-full border border-gray-400" >
-                                <Image
-                                    alt="Image Alt"
-                                    src={PRODUCTS[pid].filter(i => i.id === info * 1).shift().image}
-                                    layout="fill"
-                                    objectFit="cover"
-                                    priority
-                                />
-                            </div>
-                        </div>
-                        <div className="lg:mx-5">
-                            <h6 className="text-lg font-bold text-gray-500">Model : {PRODUCTS[pid].filter(i => i.id === info * 1).shift().model}</h6>
-                            <p>{PRODUCTS[pid].filter(i => i.id === info * 1).shift().title}</p>
-                            <ul className="pl-5 mt-2 space-y-1 list-disc list-inside">
-                                {
-                                    PRODUCTS[pid].filter(i => i.id === info * 1).shift().feature.map(i =>
-                                        <li key={Math.random()}>{i}</li>
-                                    )
-                                }
+  const router = useRouter();
+  const { pid, info } = router.query;
 
 
-                            </ul>
-                        </div>
-                    </div>
-                }
+  return (
+    <>
+      <Head>
+        <title>
+          {pid && PRODUCTS[pid].filter((i) => i.id === info * 1).shift().model}
+        </title>
+      </Head>
+      <div className="w-4/5 mx-auto py-6">
+        {pid && (
+          <div className="lg:flex lg:justify-center">
+            <div className="h-96 lg:w-[35rem] lg:h-[40rem]">
+              <div className="relative w-full h-full border border-gray-400">
+                <Image
+                  alt="Image Alt"
+                  src={
+                    PRODUCTS[pid].filter((i) => i.id === info * 1).shift().image
+                  }
+                  layout="fill"
+                  objectFit="cover"
+                  priority
+                />
+              </div>
             </div>
-        </>
+            <div className="lg:mx-5">
+              <h6 className="text-lg font-bold text-gray-500">
+                Model :{" "}
+                {PRODUCTS[pid].filter((i) => i.id === info * 1).shift().model}
+              </h6>
+              <p>
+                {PRODUCTS[pid].filter((i) => i.id === info * 1).shift().title}
+              </p>
+              <ul className="pl-5 mt-2 space-y-1 list-disc list-inside">
+                {PRODUCTS[pid]
+                  .filter((i) => i.id === info * 1)
+                  .shift()
+                  .feature.map((i) => (
+                    <li key={Math.random()}>{i}</li>
+                  ))}
+              </ul>
+              <div className="my-8">
+                <p className="text-gray-600">Product Price</p>
+                <p className="font-bold text-2xl">BDT 84,900</p>
+              </div>
+            </div>
+          </div>
+        )}
+        {/* Specifications & Features  */}
+        <div className="xl:w-4/5 mx-auto py-6">
+          <h2 className="text-2xl font-bold">Specifications & Features</h2>
 
-    )
-}
+          <div className="relative overflow-x-auto">
+            <table className="w-full text-sm text-left text-gray-500">
+              <tbody>
+                {data.map((i) => (
+                  <tr key={i.id} className="bg-white border-b">
+                    <th
+                      scope="row"
+                      className="py-4 font-medium text-gray-900 whitespace-nowrap "
+                    >
+                      {i.key}
+                    </th>
+                    <td className="px-6 py-4">{i.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default ProductDetails
+export default ProductDetails;
 
 ProductDetails.getLayout = function getLayout(page) {
-    return <LandingLayout>{page}</LandingLayout>;
+  return <LandingLayout>{page}</LandingLayout>;
 };

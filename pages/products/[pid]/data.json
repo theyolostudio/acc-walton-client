@@ -45,4 +45,22 @@
     "key": "Compressor Type ",
     "value": "Rotary (Inverter)"
   }
+  ,
+  {
+    "id": 10,
+    "key": "Refrigerant Type",
+    "value": "R-32"
+  }
+  ,
+  {
+    "id": 11,
+    "key": "Refrigerant Amount (kg)",
+    "value": "0.61"
+  }
+  ,
+  {
+    "id": 11,
+    "key": "Operating Range (Ambient Temperature)",
+    "value": "20°C to 52°C"
+  }
 ]

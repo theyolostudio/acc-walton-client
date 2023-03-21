@@ -4,12 +4,16 @@ import { useRouter } from "next/router";
 import LandingLayout from "../../../components/layout/LandingLayout";
 import PRODUCTS from "../../../products";
 
-import data from "./data.json";
+import data from "../../../components/products/@media/data.json";
+
+import TEMP from "../../../components/products/@media/temp.png";
+import POWER from "../../../components/products/@media/power.png";
+import VOLT from "../../../components/products/@media/volt.png";
+import ERROR from "../../../components/products/@media/error.png";
 
 const ProductDetails = () => {
   const router = useRouter();
   const { pid, info } = router.query;
-
 
   return (
     <>
@@ -77,6 +81,35 @@ const ProductDetails = () => {
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+        {/* Technical Features  */}
+        <div className="xl:w-4/5 mx-auto py-6">
+          <h2 className="text-2xl font-bold">Technical Features</h2>
+          <p>
+            Digital display is a panel screen that presents a variety of
+            multimedia formats to a customer. The advanced digital display is
+            able to show a wide range of these multimedia formats which make it
+            to become a superior mode of communication.
+          </p>
+
+          <div className="py-5 space-y-5">
+            <div className="flex items-center">
+              <Image src={TEMP} />
+              <h3 className="text-2xl font-bold">Temperature</h3>
+            </div>
+            <div className="flex items-center ">
+              <Image src={POWER} />
+              <h3 className="text-2xl font-bold">Power Consumption</h3>
+            </div>
+            <div className="flex items-center ">
+              <Image src={VOLT} />
+              <h3 className="text-2xl font-bold">Voltage</h3>
+            </div>
+            <div className="flex items-center ">
+              <Image src={ERROR} />
+              <h3 className="text-2xl font-bold">Error Code</h3>
+            </div>
           </div>
         </div>
       </div>

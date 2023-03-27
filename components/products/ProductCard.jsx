@@ -7,7 +7,7 @@ const ProductCard = ({ image, model, url }) => {
         <Link href={url}>
             <div className="h-80 py-5 mx-4">
                 <div className="relative w-full h-full border border-gray-400" >
-                    <Image
+                    <img
                         alt="Image Alt"
                         src={image}
                         layout="fill"

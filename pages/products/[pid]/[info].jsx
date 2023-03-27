@@ -87,7 +87,7 @@ console.log(pid)
         )}
         {/* Specifications & Features  */}
         {
-          pid === "refrigerator"? <Image src={specificationsImg} alt="" />:
+          pid === "refrigerator"? <Image src={specificationsImg}/>:
           <div className="xl:w-4/5 mx-auto py-6">
           <h2 className="text-2xl font-bold">Specifications & Features</h2>
 

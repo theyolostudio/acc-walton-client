@@ -10,12 +10,9 @@ import TEMP from "../../../components/products/@media/temp.png";
 import POWER from "../../../components/products/@media/power.png";
 import VOLT from "../../../components/products/@media/volt.png";
 import ERROR from "../../../components/products/@media/error.png";
-<style jsx>{`
-   input[type='radio'] {
-    accent-color: black;
-}
-`}
-</style>
+import featureImg from "../../../components/products/@media/ACC Icon_1-01.png"
+import specificationsImg from "../../../components/products/@media/specifications .jpeg" 
+
 
 const ProductDetails = () => {
   const router = useRouter();
@@ -89,7 +86,9 @@ console.log(pid)
           </div>
         )}
         {/* Specifications & Features  */}
-        <div className="xl:w-4/5 mx-auto py-6">
+        {
+          pid === "refrigerator"? <Image src={specificationsImg} alt="" />:
+          <div className="xl:w-4/5 mx-auto py-6">
           <h2 className="text-2xl font-bold">Specifications & Features</h2>
 
           <div className="relative overflow-x-auto">
@@ -104,13 +103,16 @@ console.log(pid)
                       {i.key}
                     </th>
                     <td className="px-6 py-4">{i.value}</td>
+                    <td className="px-6 py-4">{i.value}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
         </div>
+        }
         {/* Technical Features  */}
+        
         <div className="xl:w-4/5 mx-auto py-6">
           <h2 className="text-2xl font-bold">Technical Features</h2>
           <p>
@@ -120,7 +122,9 @@ console.log(pid)
             to become a superior mode of communication.
           </p>
 
-          <div className="py-5 space-y-5">
+          {
+            pid === "refrigerator" || 
+            <div className="py-5 space-y-5">
             <div className="flex items-center">
               <Image src={TEMP} />
               <h3 className="text-2xl font-bold">Temperature</h3>
@@ -138,6 +142,11 @@ console.log(pid)
               <h3 className="text-2xl font-bold">Error Code</h3>
             </div>
           </div>
+          }
+          {
+            pid === "refrigerator" && <Image src={featureImg} alt="" />
+          }
+          
         </div>
       </div>
     </>

@@ -5,7 +5,7 @@ import Link from "next/link"
 const ProductCard = ({ image, model, url }) => {
     return (
         <Link href={url}>
-            <div className="h-80 py-5 mx-4">
+            <div className=" py-5 mx-4">
                 <div className="relative w-full h-full border border-gray-400" >
                     <img
                         alt="Image Alt"

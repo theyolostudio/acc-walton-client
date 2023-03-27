@@ -41,12 +41,14 @@ const PRODUCTS = {
       model: "ARNI591NEGBD",
       image: "/product/REF/Website Images-09.jpg",
       title: "Loading Quantity: 20FT/40FT/40HQ: 18/39/39",
+      capacity :"Capacity: 591 Liters",
       feature: [
+        "Artificial Intelligence Technology",
+        "Advanced IOT System",
+        "Multimedia System",
+        "Smart Alert System",
         "Individual Temperature Control",
         "3D MSO Inverter Technology",
-        "Cloud Connectivity",
-        "Smart Alert System",
-        "Capacity : 591 Liters",
       ],
     },
     {

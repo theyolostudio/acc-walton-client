@@ -154,14 +154,14 @@ const NavBar = () => {
                                         </div>
                                     </div>
                                 </li> */}
-                <li>
+                {/* <li>
                   <a
                     href="#"
                     className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
                   >
                     Best Seller
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a className="flex space-x-3" href="https://play.google.com/store/apps/details?id=com.acc.home&pli=1" target="_blank">
                     <Image src={APPLOGO} width={40} height={30} />

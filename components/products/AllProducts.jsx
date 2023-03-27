@@ -15,8 +15,8 @@ const AllProducts = ({ prod }) => {
       </h1>
       <center className="my-3">
         <Link
-          href="https://drive.google.com/file/d/1gKbgUs74n2IO_nmaCqFKSy8jz7GVhfPe/view?usp=share_link"
-          target="_blank"
+          href="#"
+          // https://drive.google.com/file/d/1gKbgUs74n2IO_nmaCqFKSy8jz7GVhfPe/view?usp=share_link
           className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700"
         >
           Download Catalogue

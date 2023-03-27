@@ -24,7 +24,9 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
+
+                                <a target="_blank" href="https://www.facebook.com/ACCGlobalOfficial
+" className="hover:underline">
                                     Facebook
                                 </a>
                             </li>
@@ -34,7 +36,7 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
+                                <a target='_blank' href="https://www.youtube.com/@accglobalofficial" className="hover:underline">
                                     YouTube
                                 </a>
                             </li>
@@ -64,7 +66,9 @@ const Footer = () => {
 
                         <div className="flex mt-4 space-x-2 sm:justify-center my-3 mx-auto">
                             <a
-                                href="#"
+                                target="_blank"
+                                href="https://www.facebook.com/ACCGlobalOfficial
+                                "
                                 className="text-white hover:text-white-900"
                             >
                                 <svg
@@ -77,9 +81,11 @@ const Footer = () => {
                                 </svg>
                                 <span className="sr-only">Facebook page</span>
                             </a>
-                            
+
                             <a
-                                href="#"
+                                target="_blank"
+                                href="https://twitter.com/ACCGlobal_
+                                "
                                 className="text-white hover:text-white-900"
                             >
                                 <svg stroke="currentColor" fill="none"
@@ -96,7 +102,8 @@ const Footer = () => {
 
 
                             <a
-                                href="#"
+                                target="_blank"
+                                href="https://www.youtube.com/@accglobalofficial"
                                 className="text-white hover:text-white-900"
                             >
                                 <svg stroke="currentColor" fill="none"
@@ -131,8 +138,9 @@ const Footer = () => {
                             </a>
 
                         </div>
-                        <img src="/playstore.png" alt="playstore image"
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.acc.home&pli=1"><img src="/playstore.png" alt="playstore image"
                             className="h-11 w-auto" />
+                        </a>
 
 
                     </div>

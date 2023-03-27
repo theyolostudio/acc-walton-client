@@ -10,10 +10,17 @@ import TEMP from "../../../components/products/@media/temp.png";
 import POWER from "../../../components/products/@media/power.png";
 import VOLT from "../../../components/products/@media/volt.png";
 import ERROR from "../../../components/products/@media/error.png";
+<style jsx>{`
+   input[type='radio'] {
+    accent-color: black;
+}
+`}
+</style>
 
 const ProductDetails = () => {
   const router = useRouter();
   const { pid, info } = router.query;
+console.log(pid)
 
   return (
     <>
@@ -46,6 +53,9 @@ const ProductDetails = () => {
               <p>
                 {PRODUCTS[pid].filter((i) => i.id === info * 1).shift().title}
               </p>
+              <p className="text-red-600 font-bold">
+                {PRODUCTS[pid].filter((i) => i.id === info * 1).shift().capacity}
+              </p>
               <ul className="pl-5 mt-2 space-y-1 list-disc list-inside">
                 {PRODUCTS[pid]
                   .filter((i) => i.id === info * 1)
@@ -55,8 +65,25 @@ const ProductDetails = () => {
                   ))}
               </ul>
               <div className="my-8">
-                <p className="text-gray-600">Product Price</p>
-                <p className="font-bold text-2xl">BDT 84,900</p>
+                
+                {
+                  pid === 'refrigerator' || <>
+                  <p className="text-gray-600">Product Price</p>
+                  <p className="font-bold text-2xl">BDT 84,900</p>
+                  </>
+                }
+                {
+                  pid === "refrigerator" && <div className="flex gap-6">
+                    <div>
+                      <p className="text-red-500 font-bold">Choose Color</p>
+                    </div>
+                    <div>
+                        
+                        <input type="radio" className="radio" name="" id="" />
+                        <span>Black</span>
+                    </div>
+                  </div>
+                }
               </div>
             </div>
           </div>

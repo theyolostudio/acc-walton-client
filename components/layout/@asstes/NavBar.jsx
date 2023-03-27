@@ -80,6 +80,17 @@ const NavBar = () => {
                   />
                 </svg>
               </button>
+              <a
+                className="space-x-3 hidden lg:flex"
+                href="https://play.google.com/store/apps/details?id=com.acc.home&pli=1"
+                target="_blank"
+              >
+                <Image src={APPLOGO} width={40} height={30} />
+                <div>
+                  <p className="text-gray-700 ">ACC InstaHome</p>
+                  <p className="text-sm">Download App Now</p>
+                </div>
+              </a>
             </div>
             <div
               id="mega-menu"
@@ -157,26 +168,23 @@ const NavBar = () => {
                 {/* <li>
                   <a
                     href="#"
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
+                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 "
                   >
                     Best Seller
                   </a>
                 </li> */}
-                <li>
-                  <a className="flex space-x-3" href="https://play.google.com/store/apps/details?id=com.acc.home&pli=1" target="_blank">
+                <li className="lg:hidden">
+                  <a
+                    className="flex space-x-3"
+                    href="https://play.google.com/store/apps/details?id=com.acc.home&pli=1"
+                    target="_blank"
+                  >
                     <Image src={APPLOGO} width={40} height={30} />
                     <div>
                       <p className="text-gray-700 ">ACC InstaHome</p>
                       <p className="text-sm">Download App Now</p>
                     </div>
                   </a>
-                  {/* <a
-                                        href="https://drive.google.com/file/d/19ga2sYEcRweCngV31Z1HSeb_N_5qnx0e/view?usp=share_link"
-                                        className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
-                                        target={'_blank'}
-                                    >
-                                        Download
-                                    </a> */}
                 </li>
               </ul>
             </div>

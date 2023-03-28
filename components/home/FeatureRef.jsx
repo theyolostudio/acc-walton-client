@@ -15,7 +15,8 @@ const FeatureRef = () => {
                                 with more advanced, connected and feature-rich technology than ever before. Alongside
                                 keeping the food safe and fresh, ACC refrigerators can help you to be more organized or
                                 entertained.</p>
-                            <Link href={"/products/refrigerator"}>
+                            <Link href='#'>
+                            {/* "/products/refrigerator" */}
                                 <button
                                     type="button"
                                     className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"

@@ -58,7 +58,7 @@ const ProductSection = () => {
                             {
                             i.item === "ac" ||
                             <div className="p-3 bg-white absolute right-0 top-0 font-bold text-red-500 rounded-bl-lg">
-                                <p>UpComing...</p>
+                                <p>Upcoming</p>
                             </div>
                                                         }
                         </div>

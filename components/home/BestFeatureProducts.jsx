@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 
 import Image from "next/legacy/image"
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const data = [
     {
@@ -43,6 +44,12 @@ const data = [
 ]
 
 const BestFeatureProducts = () => {
+    const router = useRouter()
+    const hendleDetails = (id, url) => {
+        if (id === 4) {
+            router.push(url)
+        }
+    }
     return (
         <div>
             <Swiper
@@ -68,10 +75,11 @@ const BestFeatureProducts = () => {
                 className="mySwiper"
             >
 
+
                 {
                     data.map(i =>
                         <SwiperSlide key={i.id}>
-                            <div className="bg-white rounded-md">
+                            <div className="bg-white rounded-md relative">
                                 <div className="w-full h-64 grow ">
                                     <div className="relative w-full h-full " >
                                         <Image
@@ -82,13 +90,19 @@ const BestFeatureProducts = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="bg-[#F7F7F8] p-5 max-h-[150px] rounded-md flex flex-col items-stretch">
+                                <div className="bg-[#F7F7F8] p-5 max-h-[150px] rounded-md flex flex-col items-stretch cursor-pointer">
                                     <p className="text-gray-500 font-medium">{i.model}</p>
-                                    <Link href={i.url}>
+                                    <div onClick={() => hendleDetails(i.id, i.url)}>
                                         <h3 className="font-bold text-lg h-32">{i.product}</h3>
-                                    </Link>
+                                    </div>
                                     <p className="font-bold text-2xl self-end mt-2">TBD</p>
                                 </div>
+                                {
+                                    i.id === 4 ||
+                                    <div className="p-3 bg-white absolute right-0 top-0 font-bold text-red-500 rounded-bl-lg">
+                                        <p>Upcoming</p>
+                                    </div>
+                                }
                             </div>
                         </SwiperSlide>
                     )

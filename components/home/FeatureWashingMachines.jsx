@@ -12,7 +12,8 @@ const FeatureWashingMachines = () => {
                             world class technology and advanced features to take your laundry experience to whole new
                             level. So, move away your hassle and elevate your laundry experience with new ACC Laundry
                             Maestro.</p>
-                        <Link href={"/products/wm"}>
+                        <Link href='#'>
+                        {/* "/products/wm" */}
                             <button
                                 type="button"
                                 className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"

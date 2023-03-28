@@ -1,4 +1,6 @@
 import Link from "next/link"
+import { useRouter } from "next/router"
+
 
 const ProductSection = () => {
     const data = [
@@ -28,12 +30,20 @@ const ProductSection = () => {
 
         }
     ]
+    const router = useRouter()
+    const gotoDetails = (item)=>{
+        if(item.item=== "ac"){
+            router.push(`/products/${item.item}`)
+        }else{
+            return;
+        }
+    }
     return (
         <div className="py-10">
             <div className="grid grid-cols-1  gap-10 md:grid-cols-2 lg:grid-cols-4">
                 {
-                    data.map(i => <Link href={`/products/${i.item}`} key={i.id}>
-                        <div className="relative group overflow-hidden rounded-md">
+                    data.map(i =>  
+                        <div onClick={()=>gotoDetails(i)} className="relative group overflow-hidden rounded-md cursor-pointer">
                             <img src={`/product/${i.image}`}
                                 alt="television image"
                                 className="object-cover w-full block relative h-full rounded-md overflow-hidden group-hover:scale-110 transition-transform duration-300 " />
@@ -45,8 +55,14 @@ const ProductSection = () => {
                                     <h4 className="capitalize font-semibold text-lg text-white">{i.text}</h4>
                                 </article>
                             </div>
+                            {
+                            i.item === "ac" ||
+                            <div className="p-3 bg-white absolute right-0 top-0 font-bold text-red-500 rounded-bl-lg">
+                                <p>UpComing...</p>
+                            </div>
+                                                        }
                         </div>
-                    </Link>)
+                    )
                 }
 
             </div>

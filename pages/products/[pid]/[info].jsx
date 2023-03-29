@@ -103,7 +103,6 @@ console.log(pid)
                       {i.key}
                     </th>
                     <td className="px-6 py-4">{i.value}</td>
-                    <td className="px-6 py-4">{i.value}</td>
                   </tr>
                 ))}
               </tbody>
